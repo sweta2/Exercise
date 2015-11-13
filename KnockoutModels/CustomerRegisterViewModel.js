@@ -14,7 +14,7 @@ function Customer(customerid, customerName, contactName, address, city, postalco
     self.Country = ko.observable(country).extend({ required: true });
 
     self.addCustomer = function () {
-        var dataObject = ko.toJSON(this);
+        var dataObject = ko.mapping.toJSON(this);
 
         $.ajax({
             url: '/api/customer',
