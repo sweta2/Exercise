@@ -1,0 +1,32 @@
+﻿<form role="form">
+    <div class="form-group">
+        <label for="inpCustomerName">Customer Name</label>
+        <input id="inpCustomerName" type="text" class="form-control" data-bind="value: CustomerName" required/>
+    </div>
+
+    <div class="form-group">
+        <label for="inpContactName">Contact Name</label>
+        <input id="inpContactName" type="text" class="form-control" data-bind="value: ContactName" required />
+    </div>
+
+    <div class="form-group">
+        <label for="inpAddress">Address</label>
+        <input id="inpAddress" type="text" class="form-control" data-bind="value: Address" required />
+    </div>
+
+    <div class="form-group">
+        <label for="inpCity">City</label>
+        <input id="inpCity" type="text" class="form-control" data-bind="value: City" required/>
+    </div>
+
+    <div class="form-group">
+        <label for="inpPostalCode">Postal Code</label>
+        <input id="inpPostalCode" type="text" class="form-control" data-bind="value: PostalCode" required />
+    </div>
+    <div class="form-group">
+        <label for="inpCountry">Country</label>
+        <input id="inpCountry" type="text" class="form-control" data-bind="value: Country" required />
+    </div>
+</form>
+
+<input type="button" id="btnAddCustomer" class="btn btn-primary" value="Add Customer" data-bind="click: addCustomer" /> 
